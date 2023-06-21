@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: grpc-gateway-sample-oxmv
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/oandriie-tenant/grpc-gateway-sample/grpc-gateway-sample-oxmv@sha256:40931eb184ec0d5265fb557f9e35cb5d0043ff0c92e4d0721cbe922a6bcd4f8a
+        name: my-nodejs
+        resources: {}
+status: {}
